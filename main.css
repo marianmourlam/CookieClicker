@@ -1,0 +1,9 @@
+.cookie {
+    height: 1400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+img {
+    height: 30%;
+}
