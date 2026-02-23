@@ -1,3 +1,11 @@
+body {
+    height: 100vh;
+    margin: auto;
+}
+h2 {
+    font-size: 100px;
+    display: flex;
+}
 main {
     display: flex;
     align-items: center;
@@ -7,7 +15,6 @@ main {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 300px;
 }
 img {
     width: 20%;
