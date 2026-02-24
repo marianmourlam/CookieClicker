@@ -1,9 +1,9 @@
-let compteur = 0;
+let counter = 0;
 
 const cookie = document.getElementById("cookieButton");
-const h2 = document.getElementById("score");
+const score = document.getElementById("score");
 
 cookie.addEventListener("click", () => {
-    compteur++;              // pas compteur = compteur++
-    h2.textContent = compteur;
+    counter++;
+    score.textContent = counter;
 });
