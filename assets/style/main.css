@@ -5,12 +5,12 @@
 /* Components */
 
 :root {
-    --primary-1:#FEF3C7;
-    --Primary-2 :#FCD34D;
-    --Primary-3 :#FBBF24;
-    --Secondary-1 :#FFEDD5;
-    --Secondary-2 :#FED7AA;
-    --Secondary-3 :#FB923C;
+    --primary-1: #FEF3C7;
+    --Primary-2: #FCD34D;
+    --Primary-3: #FBBF24;
+    --Secondary-1: #FFEDD5;
+    --Secondary-2: #FED7AA;
+    --Secondary-3: #FB923C;
     --Chocolate-1: #78350F;
     --Chocolate-2: #451A03;
     --Text-Primary: #451A03;
@@ -20,17 +20,27 @@
     --Success: #16A34A;
 }
 
-main {
+* {
     font-family: poppins, sans-serif;
+}
+
+.flex {
+    display: flex !important;
+}
+
+
+main {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
+
 .cookiesBox {
     width: 100%;
     display: flex;
     justify-content: center;
 }
+
 img {
     width: 20%;
 }
