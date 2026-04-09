@@ -5,5 +5,5 @@ const score = document.getElementById("score");
 
 cookie.addEventListener("click", () => {
     counter++;
-    score.textContent = counter;
+    score.textContent = counter.toString();
 });
