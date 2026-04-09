@@ -1,8 +1,6 @@
-/* components */
+/* Components */
 
 @import url("components/titles.css");
-
-/* components */
 
 /* Colors */
 
@@ -22,8 +20,6 @@
     --Success: #16A34A;
 }
 
-/* Colors */
-
 * {
     font-family: poppins, sans-serif;
 }
@@ -38,10 +34,9 @@ main {
     flex-direction: column;
 }
 
-.cookiesBox {
+.cookieBox {
     width: 100%;
     justify-content: center;
-
 }
 
 img {
