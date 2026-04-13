@@ -1,42 +1,44 @@
-[
-  {
-    "id": "1",
-    "name": "cursor",
-    "description": "Clicks automatiquement sur le cookie",
-    "baseCost": "15",
-    "cps": "0.1",
-    "icon": ""
-  },
-  {
-    "id": "2",
-    "name": "Grandma",
-    "description": "Une Grandmere qui travail pour toi",
-    "baseCost": "100",
-    "cps": "1",
-    "icon": ""
-  },
-  {
-    "id": "3",
-    "name": "Robot à cookie",
-    "description": "Un robot super rapide qui vaut 100 Grandma",
-    "baseCost": "1100",
-    "cps": "8",
-    "icon": ""
-  },
-  {
-    "id": "4",
-    "name": "Cookie Farm",
-    "description": "Une ferme de cookie",
-    "baseCost": "12000",
-    "cps": "50",
-    "icon": ""
-  },
-  {
-    "id": "5",
-    "name": "Cédric Grolet",
-    "description": "Le chef en personne ",
-    "baseCost": "125000",
-    "cps": "250",
-    "icon": ""
-  }
-]
+{
+  "shop": [
+    {
+      "id": "1",
+      "name": "cursor",
+      "description": "Clicks automatiquement sur le cookie",
+      "baseCost": "15",
+      "cps": "0.1",
+      "icon": ""
+    },
+    {
+      "id": "2",
+      "name": "Grandma",
+      "description": "Une Grandmere qui travail pour toi",
+      "baseCost": "100",
+      "cps": "1",
+      "icon": ""
+    },
+    {
+      "id": "3",
+      "name": "Robot à cookie",
+      "description": "Un robot super rapide qui vaut 100 Grandma",
+      "baseCost": "1100",
+      "cps": "8",
+      "icon": ""
+    },
+    {
+      "id": "4",
+      "name": "Cookie Farm",
+      "description": "Une ferme de cookie",
+      "baseCost": "12000",
+      "cps": "50",
+      "icon": ""
+    },
+    {
+      "id": "5",
+      "name": "Cédric Grolet",
+      "description": "Le chef en personne ",
+      "baseCost": "125000",
+      "cps": "250",
+      "icon": ""
+    }
+  ]
+}
