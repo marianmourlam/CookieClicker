@@ -9,15 +9,29 @@ cookie.addEventListener("click", () => {
 });
 
 async function loadUpgrades() {
-    const response = await fetch('/assets/data/shop.json');
-    await response.json();
+    const response = await fetch("/assets/data/shop.json");
+    return response.json();
 }
 
-let shopData = loadUpgrades()
+(async () => {
+    try {
+        const upgrades = await loadUpgrades();
+        console.log(upgrades);
+        showUpgrades(upgrades);
+    } catch (error) {
+        console.error("Failed to load upgrades:", error);
+    }
+})();
 
-for (let i = 0; i < shopData.length; i++) {
-    let parent = document.createElement("div")
-    let child = document.createElement("h3")
-    parent.appendChild(child)
-    child.innerText = shopData[i].name
+function showUpgrades(upgrades) {
+    const shop = document.getElementById("shop");
+
+    for (const upgrade of upgrades) {
+        const parent = document.createElement("div");
+        const child = document.createElement("h3");
+
+        child.innerText = upgrade.name;
+        parent.appendChild(child);
+        shop.appendChild(parent);
+    }
 }
