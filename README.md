@@ -5,3 +5,8 @@ Le but est d’optimiser sa production pour atteindre des quantités toujours pl
 
 ## Langages 
 HTML CSS JavaScript
+
+## Lancer le serveur
+```
+npx http-server
+```
