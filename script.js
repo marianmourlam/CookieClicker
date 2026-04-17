@@ -31,7 +31,8 @@ function showUpgrades(upgrades) {
         const description = document.createElement("p");
         const baseCost = document.createElement("p")
         const parent = document.createElement("div");
-        const child = document.createElement("h3");
+        const child = document.createElement("h4");
+        parent.classList.add("upgradeCard");
 
         child.innerText = upgrade.name;
         description.innerText = upgrade.description;
