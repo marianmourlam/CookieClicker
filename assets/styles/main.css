@@ -35,12 +35,13 @@ html, body {
 
 main {
     align-items: center;
-    flex-direction: column;
 }
 
 .cookieBox {
-    width: 100%;
+    width: 80%;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 img {
