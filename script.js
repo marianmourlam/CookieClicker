@@ -9,7 +9,7 @@ cookie.addEventListener("click", () => {
 });
 
 async function loadUpgrades() {
-    const response = await fetch("/assets/data/shop.json");
+    const response = await fetch("/shop.json");
     return response.json();
 }
 
