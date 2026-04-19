@@ -41,3 +41,8 @@ main {
 img {
     width: 20%;
 }
+
+p {
+    font-size: 12px;
+    font-weight: 400;
+}
