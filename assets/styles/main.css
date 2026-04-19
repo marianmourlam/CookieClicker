@@ -1,6 +1,7 @@
 /* Components */
 
 @import url("components/titles.css");
+@import url("components/shop.css");
 
 /* Colors */
 
@@ -40,7 +41,6 @@ main {
 .cookieBox {
     width: 80%;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
