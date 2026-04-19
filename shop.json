@@ -1,42 +1,42 @@
 [
   {
     "id": "1",
-    "name": "cursor",
-    "description": "Clicks automatiquement sur le cookie",
+    "name": "Curseur",
+    "description": "Clique automatiquement sur le cookie",
     "baseCost": 15,
     "cps": 0.1,
-    "icon": "icone"
+    "icon": "icône"
   },
   {
     "id": "2",
-    "name": "Grandma",
-    "description": "Une Grandmere qui travail pour toi",
+    "name": "Grand-mère",
+    "description": "Une pauvre grand-mère qui travaille pour toi",
     "baseCost": 100,
     "cps": 1,
-    "icon": "icone"
+    "icon": "icône"
   },
   {
     "id": "3",
-    "name": "Robot à cookie",
-    "description": "Un robot super rapide qui vaut 100 Grandma",
+    "name": "Robot à cookies",
+    "description": "Un robot super rapide qui vaut 100 grand-mères",
     "baseCost": 1100,
     "cps": 8,
-    "icon": "icone"
+    "icon": "icône"
   },
   {
     "id": "4",
-    "name": "Cookie Farm",
-    "description": "Une ferme de cookie",
+    "name": "Ferme à cookies",
+    "description": "Une ferme de cookies",
     "baseCost": 12000,
     "cps": 50,
-    "icon": "icone"
+    "icon": "icône"
   },
   {
     "id": "5",
-    "name": "Cédric Grolet",
-    "description": "Le chef en personne ",
+    "name": "Cédric Grolaid",
+    "description": "Le chef en personne",
     "baseCost": 125000,
     "cps": 250,
-    "icon": "icone"
+    "icon": "icône"
   }
 ]

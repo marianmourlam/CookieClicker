@@ -42,13 +42,7 @@ img {
     width: 20%;
 }
 
-aside {
-    justify-content: flex-end;
-
-}
-
-.cards {
-    border: 1px solid var(--Chocolate-2);
-    flex-direction: column;
-    align-items: center;
+p {
+    font-size: 12px;
+    font-weight: 400;
 }

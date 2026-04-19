@@ -16,7 +16,6 @@ async function loadUpgrades() {
 (async () => {
     try {
         const upgrades = await loadUpgrades();
-        console.log(upgrades);
         showUpgrades(upgrades);
     } catch (error) {
         console.error("Failed to load upgrades:", error);
