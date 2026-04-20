@@ -26,25 +26,35 @@ function showUpgrades(upgrades) {
     const shop = document.getElementById("shop");
 
     for (const upgrade of upgrades) {
-        const icon = document.createElement("p");
-        const cps = document.createElement("p");
-        const description = document.createElement("p");
-        const baseCost = document.createElement("p")
-        const parent = document.createElement("div");
-        const child = document.createElement("h4");
-        parent.classList.add("upgradeCard");
+        const upgradeIcon = document.createElement("p");
+        const upgradeCps = document.createElement("p");
+        const upgradeDescription = document.createElement("p");
+        const upgradeCost = document.createElement("p")
+        const upgradeCard = document.createElement("div");
+        const upgradeTitle = document.createElement("h4");
+        const upgradeIconWrapper = document.createElement("div");
+        const upgradeContent = document.createElement("div");
+        const upgradeStats = document.createElement("div");
 
-        child.innerText = upgrade.name;
-        description.innerText = upgrade.description;
-        baseCost.innerText = upgrade.baseCost + " cookies";
-        cps.innerText = upgrade.cps + " par seconde";
-        icon.innerText = upgrade.icon;
+        upgradeTitle.innerText = upgrade.name;
+        upgradeDescription.innerText = upgrade.description;
+        upgradeCost.innerText = upgrade.baseCost + " cookies";
+        upgradeCps.innerText = upgrade.cps + " par seconde";
+        upgradeIcon.innerText = upgrade.icon;
+        
+        upgradeContent.appendChild(upgradeTitle);
 
-        parent.appendChild(child);
-        parent.appendChild(description);
-        parent.appendChild(baseCost);
-        parent.appendChild(cps);
-        parent.appendChild(icon);
-        shop.appendChild(parent);
+
+        upgradeCard.classList.add("upgradeCard");
+        upgradeContent.appendChild(upgradeDescription);
+        upgradeContent.appendChild(upgradeCost);
+        upgradeStats.appendChild(upgradeCps);
+        upgradeIconWrapper.appendChild(upgradeIcon);
+        shop.appendChild(upgradeCard);
+        upgradeCard.appendChild(upgradeIconWrapper)
+        upgradeCard.appendChild(upgradeContent);
+
+
+        upgradeCard.appendChild(upgradeStats)
     }
 }
