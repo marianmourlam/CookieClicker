@@ -45,7 +45,6 @@ function showUpgrades(upgrades) {
         upgradeContent.appendChild(upgradeTitle);
 
 
-        upgradeCard.classList.add("upgradeCard");
         upgradeContent.appendChild(upgradeDescription);
         upgradeContent.appendChild(upgradeCost);
         upgradeStats.appendChild(upgradeCps);
@@ -53,8 +52,12 @@ function showUpgrades(upgrades) {
         shop.appendChild(upgradeCard);
         upgradeCard.appendChild(upgradeIconWrapper)
         upgradeCard.appendChild(upgradeContent);
-
-
         upgradeCard.appendChild(upgradeStats)
+
+
+        upgradeCard.classList.add("upgradeCard");
+        upgradeIconWrapper.classList.add("upgradeIconWrapper");
+        upgradeContent.classList.add("upgradeContent");
+        upgradeStats.classList.add("upgradeStats");
     }
 }
