@@ -55,9 +55,9 @@ function showUpgrades(upgrades) {
         upgradeCard.appendChild(upgradeStats)
 
 
-        upgradeCard.classList.add("upgradeCard");
-        upgradeIconWrapper.classList.add("upgradeIconWrapper");
-        upgradeContent.classList.add("upgradeContent");
-        upgradeStats.classList.add("upgradeStats");
+        upgradeCard.classList.add("upgradeCard","flex");
+        upgradeIconWrapper.classList.add("upgradeIconWrapper","flex");
+        upgradeContent.classList.add("upgradeContent","flex");
+        upgradeStats.classList.add("upgradeStats","flex");
     }
 }
