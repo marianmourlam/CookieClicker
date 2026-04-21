@@ -15,14 +15,25 @@ aside {
 }
 
 .upgradeIconWrapper {
-
+    width: 15%;
+    justify-content: center;
 }
 
 .upgradeContent {
-    justify-content: center;
     flex-direction: column;
+    width: 35%;
+    margin: auto;
+}
+
+.upgradeContent h4 p{
+    margin: auto;
+
 }
 
 .upgradeStats {
-    justify-content: center;
+    justify-content: flex-end;
+    width: 30%;
+}
+.upgradeStats p {
+   margin: auto;
 }
