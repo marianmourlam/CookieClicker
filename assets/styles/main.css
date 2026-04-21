@@ -49,6 +49,7 @@ img {
 }
 
 p {
+    color: var(--Chocolate-1);
     font-size: 12px;
     font-weight: 400;
 }
