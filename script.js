@@ -39,7 +39,7 @@ function showUpgrades(upgrades) {
         upgradeTitle.innerText = upgrade.name;
         upgradeDescription.innerText = upgrade.description;
         upgradeCost.innerText = upgrade.baseCost + " cookies";
-        upgradeCps.innerText = upgrade.cps + " par seconde";
+        upgradeCps.innerText = upgrade.cps + " seconde";
         upgradeIcon.innerText = upgrade.icon;
         
         upgradeContent.appendChild(upgradeTitle);

@@ -1,39 +1,44 @@
 aside {
-    margin: 0 10px;
-    gap: 20px;
+    border-radius: 2%;
+    margin: 0 25px;
+    gap: 12px;
     background: var(--Secondary-1);
     align-items: center;
     flex-direction: column;
-    width: 25%;
+    width: 18%;
     box-shadow: 0 0 15px 6px rgba(0, 0, 0, 0.15);
 }
 
 .upgradeCard {
-    align-items: center;
+    border-radius: 10%;
+    width: 88%;
     background-color: #f3f4f6;
-    width: 100%;
 }
 
 .upgradeIconWrapper {
+    margin: auto;
     width: 15%;
-    justify-content: center;
+    background-color: #e5e7eb;
+    border-radius: 25%;
 }
 
 .upgradeContent {
     flex-direction: column;
     width: 35%;
-    margin: auto;
+    margin: 0 auto;
 }
 
-.upgradeContent h4 p{
-    margin: auto;
-
+.upgradeContent h4 p {
+    margin: 10px;
+    justify-content: center;
 }
 
 .upgradeStats {
-    justify-content: flex-end;
     width: 30%;
 }
+
 .upgradeStats p {
-   margin: auto;
+    color: var(--Success);
+    margin: auto;
+    display: flex;
 }
