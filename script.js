@@ -31,7 +31,7 @@ function showUpgrades(upgrades) {
         const upgradeDescription = document.createElement("p");
         const upgradeCost = document.createElement("p")
         const upgradeCard = document.createElement("div");
-        const upgradeTitle = document.createElement("h4");
+        const upgradeTitle = document.createElement("h3");
         const upgradeIconWrapper = document.createElement("div");
         const upgradeContent = document.createElement("div");
         const upgradeStats = document.createElement("div");
@@ -39,7 +39,7 @@ function showUpgrades(upgrades) {
         upgradeTitle.innerText = upgrade.name;
         upgradeDescription.innerText = upgrade.description;
         upgradeCost.innerText = upgrade.baseCost + " cookies";
-        upgradeCps.innerText = upgrade.cps + " seconde";
+        upgradeCps.innerText = upgrade.cps + " par sec";
         upgradeIcon.innerText = upgrade.icon;
         
         upgradeContent.appendChild(upgradeTitle);
