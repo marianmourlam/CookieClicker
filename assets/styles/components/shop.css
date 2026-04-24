@@ -4,6 +4,7 @@ aside {
     background: var(--Secondary-1);
     box-shadow: 0 0 15px 6px rgba(0, 0, 0, 0.15);
     flex-direction: column;
+    width: 20%;
 }
 #shop{
     gap: 12px;
@@ -11,30 +12,31 @@ aside {
     align-items: center;
 }
 aside p {
-    margin: 10px;
     color: var(--Chocolate-1);
     font-size: 12px;
     font-weight: 400;
 }
 
 .upgradeCard {
+    height: 110px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
     border-radius: 10%;
-    width: 88%;
+    width: 94%;
     background-color: #f3f4f6;
-}
+    }
 
 .upgradeIconWrapper {
-    margin: auto;
-    height: 50px;
+    margin: 10px;
     width: 50px;
     background-color: #e5e7eb;
     border-radius: 25%;
 }
 
 .upgradeContent {
+    padding: 16px;
     flex-direction: column;
-    width: 35%;
-    margin: 0 auto;
 }
 
 .upgradeContent h4 p {
@@ -43,15 +45,15 @@ aside p {
 }
 
 .upgradeContent  p {
-    margin: 5px;
+    margin: 0;
 }
 
 .upgradeStats {
-    width: 30%;
 }
 
 .upgradeStats p {
     color: var(--Success);
-    margin: auto;
+    margin: 0;
     display: flex;
+    align-items: center;
 }

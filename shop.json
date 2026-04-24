@@ -2,7 +2,7 @@
   {
     "id": "1",
     "name": "Curseur",
-    "description": "Active le cookie automatiquement.",
+    "description": "Active automatiquement le cookie",
     "baseCost": 15,
     "cps": 0.1,
     "icon": ""
