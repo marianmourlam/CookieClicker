@@ -26,7 +26,7 @@ function showUpgrades(upgrades) {
     const shop = document.getElementById("shop");
 
     for (const upgrade of upgrades) {
-        const upgradeIcon = document.createElement("p");
+        const upgradeIcon = document.createElement("i");
         const upgradeCps = document.createElement("p");
         const upgradeDescription = document.createElement("p");
         const upgradeCost = document.createElement("p")
@@ -54,7 +54,7 @@ function showUpgrades(upgrades) {
         upgradeCard.appendChild(upgradeContent);
         upgradeCard.appendChild(upgradeStats)
 
-
+        upgradeCost.classList.add("cookieCost")
         upgradeCard.classList.add("upgradeCard", "flex");
         upgradeIconWrapper.classList.add("upgradeIconWrapper", "flex");
         upgradeContent.classList.add("upgradeContent", "flex");
