@@ -2,18 +2,18 @@
   {
     "id": "1",
     "name": "Curseur",
-    "description": "Active automatiquement le cookie",
+    "description": "Auto-clique sur le cookie",
     "baseCost": 15,
     "cps": 0.1,
-    "icon": ""
+    "icon": "ri-cursor-line"
   },
   {
     "id": "2",
     "name": "Grand-mère",
-    "description": "Grand mére fais des cookies",
+    "description": "Grand mère fais des cookies",
     "baseCost": 100,
     "cps": 1,
-    "icon": ""
+    "icon": "ri-cake-3-fill"
   },
   {
     "id": "3",
@@ -21,7 +21,7 @@
     "description": "Un super robot",
     "baseCost": 1100,
     "cps": 8,
-    "icon": ""
+    "icon": "ri-robot-2-line"
   },
   {
     "id": "4",
@@ -29,7 +29,7 @@
     "description": "Une ferme de cookies",
     "baseCost": 12000,
     "cps": 50,
-    "icon": ""
+    "icon": "ri-building-3-line"
   },
   {
     "id": "5",
@@ -37,6 +37,6 @@
     "description": "Le chef en personne",
     "baseCost": 125000,
     "cps": 250,
-    "icon": ""
+    "icon": "ri-vip-crown-line"
   }
 ]
