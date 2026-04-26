@@ -1,10 +1,12 @@
 aside {
     border-radius: 20px;
-    margin: 50px 50px;
+    padding: 14px;
+    margin: 34px 34px;
     background: var(--Secondary-1);
     box-shadow: 0 0 15px 6px rgba(0, 0, 0, 0.15);
     flex-direction: column;
-    width: 20%;
+    width: 18%;
+
 }
 
 #shop {
@@ -14,13 +16,13 @@ aside {
 }
 
 aside p {
-    color: var(--Chocolate-1);
+    color: #c25a00;
     font-size: 12px;
     font-weight: 400;
 }
 
 .upgradeCard {
-    height: 110px;
+    height: 100px;
     align-items: center;
     justify-content: space-between;
     border-radius: 15px;
@@ -29,6 +31,9 @@ aside p {
 }
 
 .upgradeIconWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 10px;
     width: 50px;
     background-color: #e5e7eb;
@@ -64,6 +69,18 @@ aside p {
     font-weight: bold;
     font-size: 14px;
 }
-.baseCost{
+
+.baseCost {
+    font-size: 14px;
+    color: #7b3306;
     font-weight: bold;
+}
+
+.cookieCost {
+    color: #e27100;
+}
+
+i {
+    color: #6a7282;
+    font-size: 30px;
 }
