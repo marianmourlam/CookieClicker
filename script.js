@@ -38,10 +38,10 @@ function showUpgrades(upgrades) {
 
         upgradeTitle.innerText = upgrade.name;
         upgradeDescription.innerText = upgrade.description;
-        upgradeCost.innerText = upgrade.baseCost + " cookies";
-        upgradeCps.innerText = upgrade.cps + " par sec";
-        upgradeIcon.innerText = upgrade.icon;
-        
+        upgradeCost.innerHTML = `<span class = "baseCost">${upgrade.baseCost}</span> cookies`;
+        upgradeCps.innerHTML = `<span class = "cps">+${upgrade.cps}</span><br>par sec`;
+        upgradeIcon.innerHTML = `<i class="${upgrade.icon}"></i>`;
+
         upgradeContent.appendChild(upgradeTitle);
 
 
@@ -55,9 +55,10 @@ function showUpgrades(upgrades) {
         upgradeCard.appendChild(upgradeStats)
 
 
-        upgradeCard.classList.add("upgradeCard","flex");
-        upgradeIconWrapper.classList.add("upgradeIconWrapper","flex");
-        upgradeContent.classList.add("upgradeContent","flex");
-        upgradeStats.classList.add("upgradeStats","flex");
+        upgradeCard.classList.add("upgradeCard", "flex");
+        upgradeIconWrapper.classList.add("upgradeIconWrapper", "flex");
+        upgradeContent.classList.add("upgradeContent", "flex");
+        upgradeStats.classList.add("upgradeStats", "flex");
+
     }
 }
