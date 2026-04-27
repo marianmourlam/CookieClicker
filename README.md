@@ -11,6 +11,10 @@ HTML CSS JavaScript
 npx http-server
 ```
 
+## Lancer le lint
+```
+npm run lint
+```
 ### Before push
 ```
 npm run lint
