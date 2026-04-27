@@ -10,7 +10,7 @@
   {
     "id": "2",
     "name": "Grand-mère",
-    "description": "Grand mère fais des cookies",
+    "description": "Grand-mère fait des cookies",
     "baseCost": 100,
     "cps": 1,
     "icon": "ri-cake-3-fill"
@@ -18,7 +18,7 @@
   {
     "id": "3",
     "name": "Robot à cookies",
-    "description": "Un super robot",
+    "description": "Un super robot à cookies",
     "baseCost": 1100,
     "cps": 8,
     "icon": "ri-robot-2-line"
@@ -26,14 +26,14 @@
   {
     "id": "4",
     "name": "Ferme à cookies",
-    "description": "Une ferme de cookies",
+    "description": "Une ferme qui produit des cookies",
     "baseCost": 12000,
     "cps": 50,
     "icon": "ri-building-3-line"
   },
   {
     "id": "5",
-    "name": "Cédric Grolaid",
+    "name": "Cédric Grolait",
     "description": "Le chef en personne",
     "baseCost": 125000,
     "cps": 250,

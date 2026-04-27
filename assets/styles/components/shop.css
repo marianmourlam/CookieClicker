@@ -1,12 +1,11 @@
 aside {
     border-radius: 20px;
     padding: 14px;
-    margin: 34px 34px;
+    margin: 34px;
     background: var(--Secondary-1);
     box-shadow: 0 0 15px 6px rgba(0, 0, 0, 0.15);
     flex-direction: column;
     width: 18%;
-
 }
 
 #shop {
@@ -16,7 +15,7 @@ aside {
 }
 
 aside p {
-    color: #c25a00;
+    color: var(--Secondary-3);
     font-size: 12px;
     font-weight: 400;
 }
@@ -25,19 +24,18 @@ aside p {
     height: 100px;
     align-items: center;
     justify-content: space-between;
-    border-radius: 15px;
-    width: 94%;
-    background-color: #f3f4f6;
+    border-radius: 16px;
+    width: 100%;
+    background-color: var(--White);
 }
 
 .upgradeIconWrapper {
-    display: flex;
     justify-content: center;
     align-items: center;
     margin: 10px;
     width: 50px;
-    background-color: #e5e7eb;
-    border-radius: 25%;
+    background-color: var( --Wraper-background);
+    border-radius: 16px;
 }
 
 .upgradeContent {
@@ -72,15 +70,15 @@ aside p {
 
 .baseCost {
     font-size: 14px;
-    color: #7b3306;
+    color: var(--baseCostColor);
     font-weight: bold;
 }
 
 .cookieCost {
-    color: #e27100;
+    color: var(--cookieCostColor);
 }
 
 i {
-    color: #6a7282;
+    color: var(--iconeColor);
     font-size: 30px;
 }
