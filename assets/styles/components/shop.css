@@ -3,7 +3,7 @@ aside {
     padding: 14px;
     margin: 34px;
     background: var(--Secondary-1);
-    box-shadow: 0 0 15px 6px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 16px 6px rgba(0, 0, 0, 0.15);
     flex-direction: column;
     width: 18%;
 }
@@ -23,7 +23,6 @@ aside p {
 .upgradeCard {
     height: 100px;
     align-items: center;
-    justify-content: space-between;
     border-radius: 16px;
     width: 100%;
     background-color: var(--White);
@@ -31,11 +30,15 @@ aside p {
 
 .upgradeIconWrapper {
     justify-content: center;
-    align-items: center;
     margin: 10px;
-    width: 50px;
-    background-color: var( --Wraper-background);
+    width: 14%;
+    background-color: var(--Wraper-background);
     border-radius: 16px;
+}
+
+i {
+    color: var(--iconeColor);
+    font-size: 30px;
 }
 
 .upgradeContent {
@@ -44,28 +47,13 @@ aside p {
     padding-left: 10px;
 }
 
-.upgradeContent h4 p {
+.upgradeContent h4 {
     margin: 0;
     justify-content: center;
 }
 
 .upgradeContent p {
     margin: 0;
-}
-
-.upgradeStats {
-    padding: 4%;
-}
-
-.upgradeStats p {
-    color: var(--Success);
-    margin: 0;
-    align-items: center;
-}
-
-.cps {
-    font-weight: bold;
-    font-size: 14px;
 }
 
 .baseCost {
@@ -78,7 +66,17 @@ aside p {
     color: var(--cookieCostColor);
 }
 
-i {
-    color: var(--iconeColor);
-    font-size: 30px;
+.upgradeStats {
+    padding: 2%;
+}
+
+.upgradeStats p {
+    color: var(--Success);
+    margin: 0;
+    align-items: center;
+}
+
+.cps {
+    font-weight: bold;
+    font-size: 14px;
 }
