@@ -2,7 +2,7 @@ aside {
     border-radius: 20px;
     padding: 14px;
     margin: 34px;
-    background: var(--Secondary-1);
+    background: var(--color-surface-panel);
     box-shadow: 0 0 16px 6px rgba(0, 0, 0, 0.15);
     flex-direction: column;
     width: 18%;
@@ -15,7 +15,7 @@ aside {
 }
 
 aside p {
-    color: var(--Secondary-3);
+    color: var(--color-text-supporting);
     font-size: 12px;
     font-weight: 400;
 }
@@ -25,19 +25,19 @@ aside p {
     align-items: center;
     border-radius: 16px;
     width: 100%;
-    background-color: var(--White);
+    background-color: var(--color-surface-card);
 }
 
 .upgradeIconWrapper {
     justify-content: center;
     margin: 10px;
     width: 14%;
-    background-color: var(--Wraper-background);
+    background-color: var(--color-surface-subtle);
     border-radius: 16px;
 }
 
 i {
-    color: var(--iconeColor);
+    color: var(--color-icon-default);
     font-size: 30px;
 }
 
@@ -47,23 +47,18 @@ i {
     padding-left: 10px;
 }
 
-.upgradeContent h4 {
-    margin: 0;
-    justify-content: center;
-}
-
 .upgradeContent p {
     margin: 0;
 }
 
 .baseCost {
     font-size: 14px;
-    color: var(--baseCostColor);
+    color: var(--color-price-base);
     font-weight: bold;
 }
 
 .cookieCost {
-    color: var(--cookieCostColor);
+    color: var(--color-price-highlight);
 }
 
 .upgradeStats {
@@ -71,7 +66,7 @@ i {
 }
 
 .upgradeStats p {
-    color: var(--Success);
+    color: var(--color-status-success);
     margin: 0;
     align-items: center;
 }
