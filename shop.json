@@ -2,41 +2,41 @@
   {
     "id": "1",
     "name": "Curseur",
-    "description": "Clique automatiquement sur le cookie",
+    "description": "Auto-clique sur le cookie",
     "baseCost": 15,
     "cps": 0.1,
-    "icon": "icône"
+    "icon": "ri-cursor-line"
   },
   {
     "id": "2",
     "name": "Grand-mère",
-    "description": "Une pauvre grand-mère qui travaille pour toi",
+    "description": "Grand-mère fait des cookies",
     "baseCost": 100,
     "cps": 1,
-    "icon": "icône"
+    "icon": "ri-cake-3-fill"
   },
   {
     "id": "3",
     "name": "Robot à cookies",
-    "description": "Un robot super rapide qui vaut 100 grand-mères",
+    "description": "Un super robot à cookies",
     "baseCost": 1100,
     "cps": 8,
-    "icon": "icône"
+    "icon": "ri-robot-2-line"
   },
   {
     "id": "4",
     "name": "Ferme à cookies",
-    "description": "Une ferme de cookies",
+    "description": "Une ferme qui produit des cookies",
     "baseCost": 12000,
     "cps": 50,
-    "icon": "icône"
+    "icon": "ri-building-3-line"
   },
   {
     "id": "5",
-    "name": "Cédric Grolaid",
+    "name": "Cédric Grolait",
     "description": "Le chef en personne",
     "baseCost": 125000,
     "cps": 250,
-    "icon": "icône"
+    "icon": "ri-vip-crown-line"
   }
 ]

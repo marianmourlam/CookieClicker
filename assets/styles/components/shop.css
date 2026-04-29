@@ -1,0 +1,77 @@
+aside {
+    border-radius: 20px;
+    padding: 14px;
+    margin: 34px;
+    background: var(--color-surface-panel);
+    box-shadow: 0 0 16px 6px rgba(0, 0, 0, 0.15);
+    flex-direction: column;
+    width: 18%;
+}
+
+#shop {
+    gap: 12px;
+    flex-direction: column;
+    align-items: center;
+}
+
+aside p {
+    color: var(--color-text-supporting);
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.upgradeCard {
+    height: 100px;
+    align-items: center;
+    border-radius: 16px;
+    width: 100%;
+    background-color: var(--color-surface-card);
+}
+
+.upgradeIconWrapper {
+    justify-content: center;
+    margin: 10px;
+    width: 14%;
+    background-color: var(--color-surface-subtle);
+    border-radius: 16px;
+}
+
+i {
+    color: var(--color-icon-default);
+    font-size: 30px;
+}
+
+.upgradeContent {
+    flex: 1;
+    flex-direction: column;
+    padding-left: 10px;
+}
+
+.upgradeContent p {
+    margin: 0;
+}
+
+.baseCost {
+    font-size: 14px;
+    color: var(--color-price-base);
+    font-weight: bold;
+}
+
+.cookieCost {
+    color: var(--color-price-highlight);
+}
+
+.upgradeStats {
+    padding: 2%;
+}
+
+.upgradeStats p {
+    color: var(--color-status-success);
+    margin: 0;
+    align-items: center;
+}
+
+.cps {
+    font-weight: bold;
+    font-size: 14px;
+}

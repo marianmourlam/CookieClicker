@@ -1,48 +1,64 @@
 /* Components */
 
 @import url("components/titles.css");
+@import url("components/shop.css");
 
 /* Colors */
 
 :root {
-    --primary-1: #FEF3C7;
-    --Primary-2: #FCD34D;
-    --Primary-3: #FBBF24;
-    --Secondary-1: #FFEDD5;
-    --Secondary-2: #FED7AA;
-    --Secondary-3: #FB923C;
-    --Chocolate-1: #78350F;
-    --Chocolate-2: #451A03;
-    --Text-Primary: #451A03;
-    --Text-Secondary: #92400E;
-    --Text-Muted: #6B7280;
-    --White: #FFFFFF;
-    --Success: #16A34A;
+    --color-bg-app: #fff9ec;
+    --color-surface-card: #f3f4f6;
+    --color-surface-subtle: #e5e7eb;
+    --color-surface-panel: #FFEDD5;
+    --color-price-highlight: #e27100;
+    --color-text-supporting: #c25a00;
+    --color-text-secondary: #B45309;
+    --color-text-primary: #7b3306;
+    --color-text-heading: #7b3306;
+    --color-price-base: #7b3306;
+    --color-icon-default: #6a7282;
+    --color-status-success: #27a661;
 }
 
 * {
     font-family: poppins, sans-serif;
+    box-sizing: border-box;
 }
 
 .flex {
     display: flex !important;
 }
 
+body {
+    margin: auto;
+}
+
 main {
-    align-items: center;
-    flex-direction: column;
+    height: 100vh;
+    background-color: var(--color-bg-app);
+    margin: auto;
 }
 
 .cookieBox {
-    width: 100%;
+    width: 80%;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
 }
 
 img {
-    width: 20%;
+    height: 25%;
 }
 
 p {
-    font-size: 12px;
+    color: var(--color-text-primary);
+    font-size: 24px;
     font-weight: 400;
+    margin: 0 0 50px 0;
+}
+
+.cookieText {
+    color: var(--color-text-secondary);
+    font-size: 12px;
+    margin-top: 48px;
 }
