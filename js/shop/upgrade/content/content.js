@@ -1,7 +1,7 @@
-import {createElement} from "../upgrade";
+import {createElement} from "../upgrade.js";
 
 export function createUpgradeContent(upgrade) {
-    const content = createElement("div", ["upgradeContent", "flex"]);
+    const content = createElement("div", ["flex"]);
 
     const title = createElement("h3");
     const description = createElement("p");

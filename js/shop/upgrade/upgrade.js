@@ -1,4 +1,4 @@
-import {createUpgradeCard} from "./card/card";
+import {createUpgradeCard} from "./card/card.js";
 
 export function createElement(tagName, classNames = []) {
     const element = document.createElement(tagName);

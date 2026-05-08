@@ -8,6 +8,6 @@ export function getScore() {
     return counter;
 }
 
-export function updateScoreDisplay(scoreElement) {
-    scoreElement.textContent = getScore().toString();
+export function updateScoreDisplay(score) {
+    score.textContent = getScore().toString();
 }
