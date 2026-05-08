@@ -5,6 +5,11 @@
     "globals": "^17.6.0"
   },
   "scripts": {
-    "lint": "eslint js/*.js"
+    "lint": "eslint \"js/**/*.js\"",
+    "prettier": "prettier --write \"js/**/*.js\"",
+    "prettier:check": "prettier --check \"js/**/*.js\""
+  },
+  "dependencies": {
+    "prettier": "^3.8.3"
   }
 }

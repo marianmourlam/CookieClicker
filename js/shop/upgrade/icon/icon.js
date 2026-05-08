@@ -1,12 +1,12 @@
-import {createElement} from "../upgrade.js";
+import { createElement } from "../upgrade.js";
 
 export function createUpgradeIcon(iconClass) {
-    const iconContainer = createElement("div", ["flex"]);
-    const icon = createElement("i");
+  const iconContainer = createElement("div", ["flex"]);
+  const icon = createElement("i");
 
-    icon.className = iconClass;
+  icon.className = iconClass;
 
-    iconContainer.appendChild(icon);
+  iconContainer.appendChild(icon);
 
-    return iconContainer;
+  return iconContainer;
 }

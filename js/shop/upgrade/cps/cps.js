@@ -1,12 +1,12 @@
-import {createElement} from "../upgrade.js";
+import { createElement } from "../upgrade.js";
 
 export function createUpgradeCps(cps) {
-    const cpsContainer = createElement("div", ["flex"]);
-    const cpsLabel = createElement("p");
+  const cpsContainer = createElement("div", ["flex"]);
+  const cpsLabel = createElement("p");
 
-    cpsLabel.innerHTML = `<span class="cps">+${cps}</span><br>par sec`;
+  cpsLabel.innerHTML = `<span class="cps">+${cps}</span><br>par sec`;
 
-    cpsContainer.appendChild(cpsLabel);
+  cpsContainer.appendChild(cpsLabel);
 
-    return cpsContainer;
+  return cpsContainer;
 }

@@ -1,17 +1,17 @@
-import {createUpgradeCard} from "./card/card.js";
+import { createUpgradeCard } from "./card/card.js";
 
 export function createElement(tagName, classNames = []) {
-    const element = document.createElement(tagName);
+  const element = document.createElement(tagName);
 
-    element.classList.add(...classNames);
+  element.classList.add(...classNames);
 
-    return element;
+  return element;
 }
 
 export function showUpgrades(upgrades) {
-    const shop = document.getElementById("shop");
+  const shop = document.getElementById("shop");
 
-    for (const upgrade of upgrades) {
-        shop.appendChild(createUpgradeCard(upgrade));
-    }
+  for (const upgrade of upgrades) {
+    shop.appendChild(createUpgradeCard(upgrade));
+  }
 }

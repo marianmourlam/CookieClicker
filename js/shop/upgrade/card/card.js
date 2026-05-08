@@ -1,16 +1,16 @@
-import {createUpgradeContent} from "../content/content.js";
-import {createElement} from "../upgrade.js";
-import {createUpgradeIcon} from "../icon/icon.js";
-import {createUpgradeCps} from "../cps/cps.js";
+import { createUpgradeContent } from "../content/content.js";
+import { createElement } from "../upgrade.js";
+import { createUpgradeIcon } from "../icon/icon.js";
+import { createUpgradeCps } from "../cps/cps.js";
 
 export function createUpgradeCard(upgrade) {
-    const upgradeCard = createElement("div", ["flex"]);
+  const upgradeCard = createElement("div", ["flex"]);
 
-    const icon = createUpgradeIcon(upgrade.icon);
-    const content = createUpgradeContent(upgrade);
-    const cps = createUpgradeCps(upgrade.cps);
+  const icon = createUpgradeIcon(upgrade.icon);
+  const content = createUpgradeContent(upgrade);
+  const cps = createUpgradeCps(upgrade.cps);
 
-    upgradeCard.append(icon, content, cps);
+  upgradeCard.append(icon, content, cps);
 
-    return upgradeCard;
+  return upgradeCard;
 }
