@@ -10,3 +10,9 @@ HTML CSS JavaScript
 ```
 npx http-server
 ```
+
+### Before push
+```
+npm run lint
+npm run prettier
+```
