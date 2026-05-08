@@ -1,7 +1,7 @@
 import { createElement } from "../upgrade.js";
 
 export function createUpgradeContent(upgrade) {
-  const content = createElement("div", ["flex"]);
+  const content = createElement("div", ["flex", "upgradeContent"]);
 
   const title = createElement("h3");
   const description = createElement("p");

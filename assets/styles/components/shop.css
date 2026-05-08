@@ -2,7 +2,7 @@ aside {
     border-radius: 20px;
     padding: 14px;
     margin: 34px;
-    background: var(--color-surface-panel);
+    background: var(--color-bg-app);
     box-shadow: 0 0 16px 6px rgba(0, 0, 0, 0.15);
     flex-direction: column;
     width: 18%;
@@ -25,6 +25,7 @@ aside p {
     align-items: center;
     border-radius: 16px;
     width: 100%;
+    padding: 8px;
     background-color: var(--color-surface-card);
 }
 
@@ -39,6 +40,7 @@ aside p {
 i {
     color: var(--color-icon-default);
     font-size: 30px;
+    padding: 10px;
 }
 
 .upgradeContent {
@@ -49,6 +51,7 @@ i {
 
 .upgradeContent p {
     margin: 0;
+    font-weight: 600;
 }
 
 .baseCost {
@@ -61,11 +64,11 @@ i {
     color: var(--color-price-highlight);
 }
 
-.upgradeStats {
+.cpsContainer {
     padding: 2%;
 }
 
-.upgradeStats p {
+.cpsContainer p {
     color: var(--color-status-success);
     margin: 0;
     align-items: center;
