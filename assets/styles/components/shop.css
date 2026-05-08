@@ -71,7 +71,6 @@ i {
 .cpsContainer p {
     color: var(--color-status-success);
     margin: 0;
-    align-items: center;
 }
 
 .cps {
