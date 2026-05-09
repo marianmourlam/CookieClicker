@@ -1,0 +1,9 @@
+aside {
+    border-radius: 20px;
+    padding: 14px;
+    margin: 34px;
+    background: var(--color-bg-app);
+    box-shadow: 0 0 16px 6px rgba(0, 0, 0, 0.15);
+    flex-direction: column;
+    width: 18%;
+}

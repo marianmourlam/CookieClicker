@@ -9,7 +9,7 @@ export function createElement(tagName, classNames = []) {
 }
 
 export function showUpgrades(upgrades) {
-  const shop = document.getElementById("shop");
+  const shop = document.getElementById("upgradeCardsContainer");
 
   for (const upgrade of upgrades) {
     shop.appendChild(createUpgradeCard(upgrade));

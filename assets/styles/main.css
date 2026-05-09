@@ -1,7 +1,14 @@
 /* Components */
 
-@import url("components/titles.css");
-@import url("components/shop.css");
+@import url("components/atoms/titles.css");
+@import url("components/atoms/upgradeCost.css");
+@import url("components/atoms/upgradeCps.css");
+@import url("components/atoms/upgradeDescription.css");
+@import url("components/atoms/upgradeIcon.css");
+@import url("components/molecules/upgradeCards.css");
+@import url("components/molecules/upgradeCardsContainer.css");
+@import url("components/molecules/upgradeContent.css");
+@import url("components/organismes/shop.css");
 
 /* Colors */
 

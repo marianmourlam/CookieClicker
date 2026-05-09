@@ -1,0 +1,12 @@
+.upgradeContent {
+    flex: 1;
+    flex-direction: column;
+    padding-left: 10px;
+}
+.upgradeContent p {
+    margin: 0;
+    font-weight: 600;
+}
+.cookieCost {
+    color: var(--color-price-highlight);
+}
