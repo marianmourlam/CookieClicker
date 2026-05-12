@@ -4,7 +4,7 @@ import { createUpgradeIcon } from "../icon/icon.js";
 import { createUpgradeCps } from "../cps/cps.js";
 
 export function createUpgradeCard(upgrade) {
-  const upgradeCard = createElement("div", ["flex"]);
+  const upgradeCard = createElement("div", ["flex", "upgradeCard"]);
 
   const icon = createUpgradeIcon(upgrade.icon);
   const content = createUpgradeContent(upgrade);

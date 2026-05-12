@@ -1,0 +1,10 @@
+.upgradeIcon {
+    justify-content: center;
+    background-color: var(--color-surface-subtle);
+    border-radius: 16px;
+}
+i {
+    color: var(--color-icon-default);
+    font-size: 30px;
+    padding: 10px;
+}

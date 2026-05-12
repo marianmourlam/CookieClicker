@@ -1,0 +1,9 @@
+.cps {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.cpsContainer p {
+    color: var(--color-status-success);
+    margin: 0;
+}

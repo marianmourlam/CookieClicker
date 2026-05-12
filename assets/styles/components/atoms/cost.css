@@ -1,0 +1,5 @@
+.baseCost {
+    font-size: 14px;
+    color: var(--color-price-base);
+    font-weight: bold;
+}
