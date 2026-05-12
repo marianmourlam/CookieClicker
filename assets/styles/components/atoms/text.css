@@ -1,0 +1,27 @@
+.helper-text {
+    color: var(--color-text-secondary);
+    font-size: 12px;
+    margin-top: 48px;
+}
+
+aside p {
+    color: var(--color-text-supporting);
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.upgradeContent p {
+    margin: 0;
+    font-weight: 600;
+}
+
+.cookieCost {
+    color: var(--color-price-highlight);
+}
+
+p {
+    color: var(--color-text-primary);
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0 0 50px 0;
+}

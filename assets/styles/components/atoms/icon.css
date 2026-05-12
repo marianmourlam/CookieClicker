@@ -1,7 +1,6 @@
 .upgradeIcon {
     justify-content: center;
     margin: 10px;
-    width: 14%;
     background-color: var(--color-surface-subtle);
     border-radius: 16px;
 }

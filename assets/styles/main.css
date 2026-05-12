@@ -1,14 +1,15 @@
 /* Components */
 
-@import url("components/atoms/titles.css");
-@import url("components/atoms/upgradeCost.css");
-@import url("components/atoms/upgradeCps.css");
-@import url("components/atoms/upgradeDescription.css");
-@import url("components/atoms/upgradeIcon.css");
+@import url("components/atoms/text.css");
+@import url("components/atoms/title.css");
+@import url("components/atoms/cost.css");
+@import url("components/atoms/cps.css");
+@import url("components/atoms/icon.css");
 @import url("components/molecules/upgradeCards.css");
 @import url("components/molecules/upgradeCardsContainer.css");
 @import url("components/molecules/upgradeContent.css");
-@import url("components/organismes/shop.css");
+@import url("components/organisms/shop.css");
+@import url("components/organisms/cookieBox.css");
 
 /* Colors */
 
@@ -43,29 +44,8 @@ body {
 main {
     height: 100vh;
     background-color: var(--color-bg-app);
-    margin: auto;
-}
-
-.cookieBox {
-    width: 80%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 img {
-    height: 25%;
-}
-
-p {
-    color: var(--color-text-primary);
-    font-size: 24px;
-    font-weight: 400;
-    margin: 0 0 50px 0;
-}
-
-.cookieText {
-    color: var(--color-text-secondary);
-    font-size: 12px;
-    margin-top: 48px;
+    width: 20%;
 }
