@@ -5,8 +5,8 @@
 @import url("components/atoms/cost.css");
 @import url("components/atoms/cps.css");
 @import url("components/atoms/icon.css");
-@import url("components/molecules/upgradeCards.css");
-@import url("components/molecules/upgradeCardsContainer.css");
+@import url("components/molecules/upgradeCard.css");
+@import url("components/molecules/upgradeCardContainer.css");
 @import url("components/molecules/upgradeContent.css");
 @import url("components/organisms/shop.css");
 @import url("components/organisms/cookieBox.css");
