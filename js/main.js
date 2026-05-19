@@ -1,6 +1,6 @@
-import { loadUpgrades } from "./shop/api.js";
-import { showUpgrades } from "./shop/upgrade/upgrade.js";
-import { incrementScore, updateScoreDisplay } from "./counter/counter.js";
+import {loadUpgrades} from "./shop/api.js";
+import {showUpgrades} from "./shop/upgrade/upgrade.js";
+import {incrementScore, updateScoreDisplay} from "./counter/counter.js";
 
 const cookie = document.getElementById("cookieButton");
 const score = document.getElementById("score");

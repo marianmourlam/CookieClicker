@@ -1,11 +1,11 @@
-let counter = 0;
+let scoreElement = 0;
 
 export function incrementScore() {
-  counter++;
+  scoreElement++;
 }
 
 export function getScore() {
-  return counter;
+  return scoreElement;
 }
 
 export function updateScoreDisplay(score) {
