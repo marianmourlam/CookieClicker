@@ -18,6 +18,5 @@ export function createUpgradeCard(upgrade) {
 export function unlockCard(upgrade, upgradeCard) {
   if (getScore() >= upgrade.baseCost) {
     upgradeCard.classList.add("upgradeCard--available");
-    console.log("card Disponible");
   }
 }
