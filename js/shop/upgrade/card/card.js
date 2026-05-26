@@ -14,7 +14,7 @@ export function createUpgradeCard(upgrade) {
 
   upgradeCard.append(icon, content, cps);
   upgradeCard.addEventListener("click", () => {
-    buyUpgrade(upgrade, upgradeCard);
+    buyUpgrade(upgrade);
   });
   unlockCard(upgrade, upgradeCard);
 
@@ -23,5 +23,7 @@ export function createUpgradeCard(upgrade) {
 export function unlockCard(upgrade, upgradeCard) {
   if (getScore() >= upgrade.baseCost) {
     upgradeCard.classList.add("upgradeCard--available");
+  } else {
+    upgradeCard.classList.remove("upgradeCard--available");
   }
 }
