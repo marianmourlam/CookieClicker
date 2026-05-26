@@ -1,9 +1,9 @@
 import { createUpgradeContent } from "../content/content.js";
-import { createElement } from "../upgrade.js";
 import { createUpgradeIcon } from "../icon/icon.js";
 import { createUpgradeCps } from "../cps/cps.js";
 import { getScore } from "../../../counter/counter.js";
 import { buyUpgrade } from "../buyUpgrade/buyUpgrade.js";
+import { createElement } from "../../../main.js";
 
 export function createUpgradeCard(upgrade) {
   const upgradeCard = createElement("div", ["flex", "upgradeCard"]);

@@ -1,4 +1,4 @@
-import { createElement } from "../upgrade.js";
+import { createElement } from "../../../main.js";
 
 export function createUpgradeContent(upgrade) {
   const content = createElement("div", ["flex", "upgradeContent"]);
