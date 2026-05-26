@@ -1,16 +1,17 @@
-let scoreElement = 0;
+let score = 0;
 
 export function incrementScore() {
-  scoreElement++;
+  score++;
 }
 export function decrementScore(amount) {
-  scoreElement -= amount;
+  score -= amount;
 }
 
 export function getScore() {
-  return scoreElement;
+  return score;
 }
 
 export function updateScoreDisplay(score) {
   score.textContent = getScore().toString();
 }
+

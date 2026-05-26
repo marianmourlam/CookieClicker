@@ -5,7 +5,7 @@ import {
 } from "../../../counter/counter.js";
 import { updateCardsState } from "../upgrade.js";
 
-const score = document.getElementById("score");
+const scoreElement = document.getElementById("score");
 
 export function buyUpgrade(upgrade) {
   if (getScore() < upgrade.baseCost) {
@@ -13,6 +13,6 @@ export function buyUpgrade(upgrade) {
   }
 
   decrementScore(upgrade.baseCost);
-  updateScoreDisplay(score);
+  updateScoreDisplay(scoreElement);
   updateCardsState();
 }
