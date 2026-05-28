@@ -1,4 +1,13 @@
 let score = 0;
+let cookiesPerSecond = 0;
+
+export function addCookiesPerSecond(amount) {
+  cookiesPerSecond += amount;
+}
+
+export function applyCookiesPerSecond() {
+  score += cookiesPerSecond;
+}
 
 export function incrementScore() {
   score++;
@@ -12,5 +21,11 @@ export function getScore() {
 }
 
 export function updateScoreDisplay(score) {
-  score.textContent = getScore().toString();
+  score.textContent = Math.floor(getScore()).toString();
+}
+export function getCookiesPerSecond() {
+  return cookiesPerSecond;
+}
+export function updateCookiesPerSecondDisplay(cpsElement) {
+  cpsElement.textContent = `per second: ${cookiesPerSecond.toFixed(1)}`;
 }

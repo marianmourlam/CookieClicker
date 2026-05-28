@@ -1,6 +1,11 @@
 import { loadUpgrades } from "./shop/api.js";
 import { showUpgrades, updateCardsState } from "./shop/upgrade/upgrade.js";
-import { incrementScore, updateScoreDisplay } from "./counter/counter.js";
+import {
+  applyCookiesPerSecond,
+  incrementScore,
+  updateCookiesPerSecondDisplay,
+  updateScoreDisplay
+} from "./counter/counter.js";
 
 export function createElement(tagName, classNames = []) {
   const element = document.createElement(tagName);
@@ -9,7 +14,7 @@ export function createElement(tagName, classNames = []) {
 
   return element;
 }
-
+const cps = document.getElementById("cookiePerSecond")
 const cookie = document.getElementById("cookieButton");
 const score = document.getElementById("score");
 
@@ -27,5 +32,11 @@ async function initShop() {
     console.error("Failed to load upgrade:", error);
   }
 }
+setInterval(() => {
+  applyCookiesPerSecond();
+  updateScoreDisplay(score);
+  updateCardsState();
+  updateCookiesPerSecondDisplay()
+}, 100);
 
 initShop();

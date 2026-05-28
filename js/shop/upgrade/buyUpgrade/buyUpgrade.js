@@ -1,4 +1,5 @@
 import {
+  addCookiesPerSecond,
   decrementScore,
   getScore,
   updateScoreDisplay,
@@ -15,4 +16,5 @@ export function buyUpgrade(upgrade) {
   decrementScore(upgrade.baseCost);
   updateScoreDisplay(scoreElement);
   updateCardsState();
+  addCookiesPerSecond(upgrade.cps);
 }
