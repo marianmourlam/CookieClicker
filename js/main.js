@@ -33,10 +33,10 @@ async function initShop() {
   }
 }
 setInterval(() => {
-  applyCookiesPerSecond();
+  applyCookiesPerSecond(0.1);
   updateScoreDisplay(score);
   updateCardsState();
-  updateCookiesPerSecondDisplay(cps)
-}, 1000);
+  updateCookiesPerSecondDisplay(cps);
+}, 100);
 
 initShop();

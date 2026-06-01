@@ -5,8 +5,8 @@ export function addCookiesPerSecond(amount) {
   cookiesPerSecond += amount;
 }
 
-export function applyCookiesPerSecond() {
-  score += cookiesPerSecond;
+export function applyCookiesPerSecond(deltaTimeInSeconds) {
+  score += cookiesPerSecond * deltaTimeInSeconds;
 }
 
 export function incrementScore() {
