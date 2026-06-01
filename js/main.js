@@ -36,7 +36,7 @@ setInterval(() => {
   applyCookiesPerSecond();
   updateScoreDisplay(score);
   updateCardsState();
-  updateCookiesPerSecondDisplay()
-}, 100);
+  updateCookiesPerSecondDisplay(cps)
+}, 1000);
 
 initShop();

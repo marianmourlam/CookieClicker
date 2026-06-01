@@ -27,5 +27,5 @@ export function getCookiesPerSecond() {
   return cookiesPerSecond;
 }
 export function updateCookiesPerSecondDisplay(cpsElement) {
-  cpsElement.textContent = `per second: ${cookiesPerSecond.toFixed(1)}`;
+  cpsElement.textContent = `par seconde: ${cookiesPerSecond.toFixed(1)}`;
 }
