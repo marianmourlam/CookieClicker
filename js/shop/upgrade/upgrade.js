@@ -11,11 +11,13 @@ export function showUpgrades(upgrades) {
     createdUpgradeCards.push({
       upgrade: upgrade,
       upgradeCard: upgradeCard,
+      purchasedCount: 0,
     });
 
     shop.appendChild(upgradeCard);
   }
 }
+
 export function updateCardsState() {
   for (const item of createdUpgradeCards) {
     unlockCard(item.upgrade, item.upgradeCard);

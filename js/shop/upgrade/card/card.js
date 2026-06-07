@@ -1,7 +1,7 @@
 import { createUpgradeContent } from "../content/content.js";
 import { createUpgradeIcon } from "../icon/icon.js";
 import { createUpgradeCps } from "../cps/cps.js";
-import { getScore } from "../../../counter/counter.js";
+import { getScore } from "../../../score/score.js";
 import { buyUpgrade } from "../buyUpgrade/buyUpgrade.js";
 import { createElement } from "../../../main.js";
 
@@ -12,6 +12,7 @@ export function createUpgradeCard(upgrade) {
   const content = createUpgradeContent(upgrade);
   const cps = createUpgradeCps(upgrade.cps);
 
+
   upgradeCard.append(icon, content, cps);
   upgradeCard.addEventListener("click", () => {
     buyUpgrade(upgrade);
@@ -20,6 +21,7 @@ export function createUpgradeCard(upgrade) {
 
   return upgradeCard;
 }
+
 export function unlockCard(upgrade, upgradeCard) {
   if (getScore() >= upgrade.baseCost) {
     upgradeCard.classList.add("upgradeCard--available");

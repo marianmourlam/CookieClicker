@@ -4,8 +4,8 @@ import {
   applyCookiesPerSecond,
   incrementScore,
   updateCookiesPerSecondDisplay,
-  updateScoreDisplay
-} from "./counter/counter.js";
+  updateScoreDisplay,
+} from "./score/score.js";
 
 export function createElement(tagName, classNames = []) {
   const element = document.createElement(tagName);
@@ -14,7 +14,7 @@ export function createElement(tagName, classNames = []) {
 
   return element;
 }
-const cps = document.getElementById("cookiePerSecond")
+const cps = document.getElementById("cookiePerSecond");
 const cookie = document.getElementById("cookieButton");
 const score = document.getElementById("score");
 

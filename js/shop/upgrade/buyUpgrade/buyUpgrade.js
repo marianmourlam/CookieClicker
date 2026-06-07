@@ -3,8 +3,9 @@ import {
   decrementScore,
   getScore,
   updateScoreDisplay,
-} from "../../../counter/counter.js";
+} from "../../../score/score.js";
 import { updateCardsState } from "../upgrade.js";
+import {incrementAmountUpgrade} from "../amount/amount.js";
 
 const scoreElement = document.getElementById("score");
 
@@ -14,7 +15,10 @@ export function buyUpgrade(upgrade) {
   }
 
   decrementScore(upgrade.baseCost);
+  addCookiesPerSecond(upgrade.cps);
+
   updateScoreDisplay(scoreElement);
   updateCardsState();
-  addCookiesPerSecond(upgrade.cps);
+  incrementAmountUpgrade();
 }
+

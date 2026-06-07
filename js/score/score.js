@@ -23,9 +23,7 @@ export function getScore() {
 export function updateScoreDisplay(score) {
   score.textContent = Math.floor(getScore()).toString();
 }
-export function getCookiesPerSecond() {
-  return cookiesPerSecond;
-}
+
 export function updateCookiesPerSecondDisplay(cpsElement) {
   cpsElement.textContent = `par seconde: ${cookiesPerSecond.toFixed(1)}`;
 }
