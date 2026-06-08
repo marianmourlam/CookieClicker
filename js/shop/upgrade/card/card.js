@@ -12,7 +12,6 @@ export function createUpgradeCard(upgrade) {
   const content = createUpgradeContent(upgrade);
   const cps = createUpgradeCps(upgrade.cps);
 
-
   upgradeCard.append(icon, content, cps);
   upgradeCard.addEventListener("click", () => {
     buyUpgrade(upgrade);
