@@ -19,5 +19,5 @@ export function createUpgradeContent(upgrade) {
 
   content.append(title, description, cost, amount);
 
-  return content;
+  return { content, amount };
 }

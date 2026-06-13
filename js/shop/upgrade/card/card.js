@@ -2,23 +2,25 @@ import { createUpgradeContent } from "../content/content.js";
 import { createUpgradeIcon } from "../icon/icon.js";
 import { createUpgradeCps } from "../cps/cps.js";
 import { getScore } from "../../../score/score.js";
-import { buyUpgrade } from "../buyUpgrade/buyUpgrade.js";
 import { createElement } from "../../../main.js";
+import { buyUpgrade } from "../upgrade.js";
 
 export function createUpgradeCard(upgrade) {
   const upgradeCard = createElement("div", ["flex", "upgradeCard"]);
-
   const icon = createUpgradeIcon(upgrade.icon);
-  const content = createUpgradeContent(upgrade);
+  const upgradeContent = createUpgradeContent(upgrade);
   const cps = createUpgradeCps(upgrade.cps);
 
-  upgradeCard.append(icon, content, cps);
+  upgradeCard.append(icon, upgradeContent.content, cps);
   upgradeCard.addEventListener("click", () => {
     buyUpgrade(upgrade);
   });
   unlockCard(upgrade, upgradeCard);
 
-  return upgradeCard;
+  return {
+    upgradeCard,
+    amount: upgradeContent.amount,
+  };
 }
 
 export function unlockCard(upgrade, upgradeCard) {
