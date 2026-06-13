@@ -16,11 +16,11 @@ export function showUpgrades(upgrades) {
     const createdUpgradeCard = createUpgradeCard(upgrade);
 
     createdUpgradeCards.push({
-      upgrade: upgrade,
+      upgrade,
       upgradeCard: createdUpgradeCard.upgradeCard,
       amount: createdUpgradeCard.amount,
-      purchasedCount: 0,
     });
+
     shop.appendChild(createdUpgradeCard.upgradeCard);
   }
 }
@@ -31,11 +31,25 @@ export function updateCardsState() {
   }
 }
 
+function findCreatedUpgradeCard(upgrade) {
+  return createdUpgradeCards.find((item) => item.upgrade.name === upgrade.name);
+}
+
 export function buyUpgrade(upgrade) {
   if (getScore() < upgrade.baseCost) {
     return;
   }
-  incrementAmountUpgrade(upgrade.name);
+
+  const createdUpgradeCard = findCreatedUpgradeCard(upgrade);
+
+  if (!createdUpgradeCard) {
+    throw new Error(`Upgrade card not found for "${upgrade.name}"`);
+  }
+
+  const amountUpgrade = incrementAmountUpgrade(upgrade.name);
+  createdUpgradeCard.amount.textContent = amountUpgrade.toString();
+  createdUpgradeCard.amount.classList.remove("amountUpgrade--hidden");
+
   decrementScore(upgrade.baseCost);
   addCookiesPerSecond(upgrade.cps);
   updateScoreDisplay(scoreElement);

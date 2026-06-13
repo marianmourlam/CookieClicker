@@ -1,11 +1,11 @@
-let amountUpgrade = 0;
+const upgradeAmounts = {};
+
 export function incrementAmountUpgrade(upgradeName) {
-  amountUpgrade++;
-  console.log(`${amountUpgrade} amountUpgrade,${upgradeName}`);
+  upgradeAmounts[upgradeName] = getAmountUpgrade(upgradeName) + 1;
+
+  return upgradeAmounts[upgradeName];
 }
-export function getAmountUpgrade() {
-  return amountUpgrade;
-}
-export function updateAmountUpgrade(amountUpgrade) {
-  amountUpgrade.textContent = Math.floor(getAmountUpgrade()).toString();
+
+export function getAmountUpgrade(upgradeName) {
+  return upgradeAmounts[upgradeName] ?? 0;
 }
