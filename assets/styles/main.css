@@ -46,7 +46,3 @@ main {
     height: 100vh;
     background-color: var(--color-bg-app);
 }
-
-img {
-    width: 20%;
-}
