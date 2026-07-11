@@ -7,19 +7,19 @@ export function createUpgradeContent(upgrade) {
   const title = createElement("h3");
   const amount = createElement("p", ["amountUpgrade"]);
   const description = createElement("p");
-  const cost = createElement("p", ["cookieCost"]);
+  const baseCost = createElement("p", ["cookieCost"]);
 
   const amountUpgrade = getAmountUpgrade(upgrade.name);
 
   title.textContent = upgrade.name;
   amount.textContent = amountUpgrade.toString();
-  amount.classList.toggle("amountUpgrade--hidden", amountUpgrade === 0);
   description.textContent = upgrade.description;
+  baseCost.innerHTML = `<span class="baseCost">${upgrade.baseCost}</span> cookies`;
 
-  cost.innerHTML = `<span class="baseCost">${upgrade.baseCost}</span> cookies`;
+  amount.classList.toggle("amountUpgrade--hidden", amountUpgrade === 0);
 
   titleRow.append(title, amount);
-  content.append(titleRow, description, cost);
+  content.append(titleRow, description, baseCost);
 
-  return { content, amount };
+  return { content, amount, baseCost };
 }

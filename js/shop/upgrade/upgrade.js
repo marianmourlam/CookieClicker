@@ -6,6 +6,7 @@ import {
   updateScoreDisplay,
 } from "../../score/score.js";
 import { incrementAmountUpgrade } from "./amount/amount.js";
+import { increasePriceByPercentage } from "./baseCost/baseCost.js";
 
 const scoreElement = document.getElementById("score");
 const createdUpgradeCards = [];
@@ -19,6 +20,7 @@ export function showUpgrades(upgrades) {
       upgrade,
       upgradeCard: createdUpgradeCard.upgradeCard,
       amount: createdUpgradeCard.amount,
+      baseCost: createdUpgradeCard.baseCost,
     });
 
     shop.appendChild(createdUpgradeCard.upgradeCard);
@@ -47,7 +49,9 @@ export function buyUpgrade(upgrade) {
   }
 
   const amountUpgrade = incrementAmountUpgrade(upgrade.name);
+  const baseCostUpgrade = increasePriceByPercentage(upgrade.baseCost);
 
+  createdUpgradeCard.baseCost.innerHTML = `<span class="baseCost">${baseCostUpgrade.toString()}</span> cookies`;
   createdUpgradeCard.amount.textContent = amountUpgrade.toString();
   createdUpgradeCard.amount.classList.remove("amountUpgrade--hidden");
 

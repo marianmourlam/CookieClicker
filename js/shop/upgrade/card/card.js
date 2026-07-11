@@ -22,6 +22,7 @@ export function createUpgradeCard(upgrade) {
   return {
     upgradeCard,
     amount: upgradeContent.amount,
+    baseCost: upgradeContent.baseCost,
   };
 }
 
