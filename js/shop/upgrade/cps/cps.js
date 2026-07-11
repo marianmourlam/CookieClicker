@@ -1,4 +1,4 @@
-import { createElement } from "../upgrade.js";
+import { createElement } from "../../../main.js";
 
 export function createUpgradeCps(cps) {
   const cpsContainer = createElement("div", ["flex", "cpsContainer"]);

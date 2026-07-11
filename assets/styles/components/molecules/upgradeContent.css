@@ -1,4 +1,28 @@
 .upgradeContent {
-    flex: 1;
-    flex-direction: column;
+  flex: 1;
+  flex-direction: column;
+}
+
+.upgradeTitleRow {
+  align-items: center;
+  gap: 8px;
+}
+
+.amountUpgrade {
+  align-items: center;
+  background-color: var(--color-status-available);
+  border-radius: 50%;
+  color: var(--color-text-primary);
+  display: inline-flex;
+  font-size: 10px;
+  font-weight: 700;
+  height: 20px;
+  justify-content: center;
+  line-height: 1;
+  min-width: 20px;
+  padding: 0 6px;
+}
+
+.amountUpgrade--hidden {
+  display: none;
 }

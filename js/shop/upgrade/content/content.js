@@ -1,17 +1,25 @@
-import { createElement } from "../upgrade.js";
+import { createElement } from "../../../main.js";
+import { getAmountUpgrade } from "../amount/amount.js";
 
 export function createUpgradeContent(upgrade) {
   const content = createElement("div", ["flex", "upgradeContent"]);
-
+  const titleRow = createElement("div", ["flex", "upgradeTitleRow"]);
   const title = createElement("h3");
+  const amount = createElement("p", ["amountUpgrade"]);
   const description = createElement("p");
-  const cost = createElement("p", ["cookieCost"]);
+  const baseCost = createElement("p", ["cookieCost"]);
+
+  const amountUpgrade = getAmountUpgrade(upgrade.name);
 
   title.textContent = upgrade.name;
+  amount.textContent = amountUpgrade.toString();
   description.textContent = upgrade.description;
-  cost.innerHTML = `<span class="baseCost">${upgrade.baseCost}</span> cookies`;
+  baseCost.innerHTML = `<span class="baseCost">${upgrade.baseCost}</span> cookies`;
 
-  content.append(title, description, cost);
+  amount.classList.toggle("amountUpgrade--hidden", amountUpgrade === 0);
 
-  return content;
+  titleRow.append(title, amount);
+  content.append(titleRow, description, baseCost);
+
+  return { content, amount, baseCost };
 }
