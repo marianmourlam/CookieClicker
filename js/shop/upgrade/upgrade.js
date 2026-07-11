@@ -47,6 +47,7 @@ export function buyUpgrade(upgrade) {
   }
 
   const amountUpgrade = incrementAmountUpgrade(upgrade.name);
+
   createdUpgradeCard.amount.textContent = amountUpgrade.toString();
   createdUpgradeCard.amount.classList.remove("amountUpgrade--hidden");
 

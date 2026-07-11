@@ -15,6 +15,7 @@ export function createUpgradeContent(upgrade) {
   amount.textContent = amountUpgrade.toString();
   amount.classList.toggle("amountUpgrade--hidden", amountUpgrade === 0);
   description.textContent = upgrade.description;
+
   cost.innerHTML = `<span class="baseCost">${upgrade.baseCost}</span> cookies`;
 
   titleRow.append(title, amount);
