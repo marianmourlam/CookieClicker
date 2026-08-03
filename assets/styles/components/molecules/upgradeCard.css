@@ -32,10 +32,10 @@
 }
 
 .upgradeCard--available:nth-child(3n + 2)::before {
-    animation-duration: 2150ms;
+    animation-duration: 2950ms;
 }
 .upgradeCard--available:nth-child(3n + 3)::before {
-    animation-duration: 2300ms;
+    animation-duration: 3100ms;
 }
 
 @keyframes upgradeCardLoading {
