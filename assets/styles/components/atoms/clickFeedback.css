@@ -1,0 +1,24 @@
+.clickFeedback {
+    position: absolute;
+    color: var(--color-price-highlight);
+    font-size: 28px;
+    font-weight: 700;
+    pointer-events: none;
+    user-select: none;
+    animation: clickFeedbackFloat 800ms ease-out forwards;
+}
+
+@keyframes clickFeedbackFloat {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.8);
+    }
+    15% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(-50%, calc(-50% - 80px)) scale(1);
+    }
+}

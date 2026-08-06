@@ -5,6 +5,8 @@
 @import url("components/atoms/cost.css");
 @import url("components/atoms/cps.css");
 @import url("components/atoms/icon.css");
+@import url("components/atoms/cookieButton.css");
+@import url("components/atoms/clickFeedback.css");
 @import url("components/molecules/upgradeCard.css");
 @import url("components/molecules/upgradeCardContainer.css");
 @import url("components/molecules/upgradeContent.css");
@@ -15,8 +17,11 @@
 
 :root {
     --color-status-available: #facc15;
+    --color-status-available-rgb: 250, 204, 21;
     --color-bg-app: #fff9ec;
     --color-surface-card:  #f3f4f6;
+    --color-surface-available: #fdf6d8;
+    --color-surface-available-accent: #fbdd7a;
     --color-surface-subtle: #e5e7eb;
     --color-surface-panel: #FFEDD5;
     --color-price-highlight:  #e27100;

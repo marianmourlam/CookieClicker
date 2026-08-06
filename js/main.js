@@ -6,6 +6,8 @@ import {
   updateCookiesPerSecondDisplay,
   updateScoreDisplay,
 } from "./score/score.js";
+import { playCookieBounce } from "./cookie/cookie.js";
+import { showClickFeedback } from "./cookie/clickFeedback/clickFeedback.js";
 
 export function createElement(tagName, classNames = []) {
   const element = document.createElement(tagName);
@@ -16,12 +18,18 @@ export function createElement(tagName, classNames = []) {
 }
 const cps = document.getElementById("cookiePerSecond");
 const cookie = document.getElementById("cookieButton");
+const cookieContainer = document.querySelector(".cookieButtonContainer");
 const score = document.getElementById("score");
 
 cookie.addEventListener("click", () => {
   incrementScore();
   updateScoreDisplay(score);
   updateCardsState();
+  playCookieBounce(cookie);
+  showClickFeedback(cookieContainer);
+});
+cookie.addEventListener("animationend", () => {
+  cookie.classList.remove("cookieButton--clicked");
 });
 
 async function initShop() {

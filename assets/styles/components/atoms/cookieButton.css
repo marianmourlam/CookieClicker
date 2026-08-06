@@ -1,0 +1,25 @@
+.cookieButtonContainer {
+    position: relative;
+    display: inline-block;
+    line-height: 0;
+}
+
+#cookieButton {
+    cursor: pointer;
+}
+
+.cookieButton--clicked {
+    animation: cookieBounce 250ms ease-out;
+}
+
+@keyframes cookieBounce {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.92);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

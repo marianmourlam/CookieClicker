@@ -17,7 +17,10 @@ export function createUpgradeCard(upgrade) {
     buyUpgrade(upgrade);
     upgrade.baseCost = increasePriceByPercentage(upgrade.baseCost);
   });
-  unlockCard(upgrade, upgradeCard);
+  upgradeCard.addEventListener("animationend", () => {
+    upgradeCard.classList.remove("upgradeCard--unlocking");
+  });
+  unlockCard(upgrade, upgradeCard, { animate: false });
 
   return {
     upgradeCard,
@@ -26,10 +29,19 @@ export function createUpgradeCard(upgrade) {
   };
 }
 
-export function unlockCard(upgrade, upgradeCard) {
-  if (getScore() >= upgrade.baseCost) {
-    upgradeCard.classList.add("upgradeCard--available");
-  } else {
-    upgradeCard.classList.remove("upgradeCard--available");
+export function unlockCard(upgrade, upgradeCard, { animate = true } = {}) {
+  const isAvailable = getScore() >= upgrade.baseCost;
+  const wasAvailable = upgradeCard.classList.contains("upgradeCard--available");
+
+  upgradeCard.classList.toggle("upgradeCard--available", isAvailable);
+
+  if (animate && isAvailable && !wasAvailable) {
+    playUnlockAnimation(upgradeCard);
   }
+}
+
+function playUnlockAnimation(upgradeCard) {
+  upgradeCard.classList.remove("upgradeCard--unlocking");
+  void upgradeCard.offsetWidth;
+  upgradeCard.classList.add("upgradeCard--unlocking");
 }
