@@ -1,0 +1,15 @@
+@import url("components/atoms/title.css");
+@import url("components/atoms/text.css");
+@import url("components/atoms/cookieButton.css");
+@import url("components/atoms/clickFeedback.css");
+@import url("components/atoms/icon.css");
+
+@import url("components/molecules/upgradeCard.css");
+
+@import url("components/organisms/shop.css");
+
+@media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+}

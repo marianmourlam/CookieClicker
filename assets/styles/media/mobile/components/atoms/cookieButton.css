@@ -1,0 +1,9 @@
+@media screen and (max-width: 768px) {
+    #cookieButton {
+        width: min(72vw, 260px);
+        touch-action: manipulation;
+        user-select: none;
+        -webkit-user-select: none;
+        -webkit-tap-highlight-color: transparent;
+    }
+}

@@ -1,0 +1,12 @@
+@import url("components/atoms/cookieButton.css");
+
+@import url("components/organisms/cookieBox.css");
+@import url("components/organisms/shop.css");
+
+@media screen and (max-width: 992px) {
+    main {
+        flex-direction: column;
+        height: auto;
+        min-height: 100vh;
+    }
+}
