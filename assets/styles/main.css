@@ -1,5 +1,3 @@
-/* Components */
-
 @import url("components/atoms/text.css");
 @import url("components/atoms/title.css");
 @import url("components/atoms/cost.css");
@@ -13,18 +11,16 @@
 @import url("components/organisms/shop.css");
 @import url("components/organisms/cookieBox.css");
 
-/* Colors */
-
 :root {
     --color-status-available: #facc15;
     --color-status-available-rgb: 250, 204, 21;
     --color-bg-app: #fff9ec;
-    --color-surface-card:  #f3f4f6;
+    --color-surface-card: #f3f4f6;
     --color-surface-available: #fdf6d8;
     --color-surface-available-accent: #fbdd7a;
     --color-surface-subtle: #e5e7eb;
     --color-surface-panel: #FFEDD5;
-    --color-price-highlight:  #e27100;
+    --color-price-highlight: #e27100;
     --color-text-supporting: #c25a00;
     --color-text-secondary: #B45309;
     --color-text-primary: #7b3306;

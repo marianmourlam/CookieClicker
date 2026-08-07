@@ -1,0 +1,6 @@
+@media screen and (max-width: 768px) {
+    i {
+        font-size: 26px;
+        padding: 8px;
+    }
+}

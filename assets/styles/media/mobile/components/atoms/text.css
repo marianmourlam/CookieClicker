@@ -1,0 +1,14 @@
+@media screen and (max-width: 768px) {
+    p {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    #cookiePerSecond {
+        font-size: 14px;
+    }
+
+    .helperText {
+        margin-top: 28px;
+    }
+}
