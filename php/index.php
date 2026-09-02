@@ -1,18 +1,11 @@
 <?php
 
 
-$handle = fopen('upgrade.csv', "r");
+$openFile = fopen(__DIR__ . '/../upgrades.csv', "r");
+$response = fgetcsv($openFile);
 
-$reponse = fgets($handle);
+// TODO Extraire la première ligne (en-têtes) pour ne pas la stocker en tant qu'objet
 
-while ($reponse !== false) {
-    echo $reponse;
-    $reponse = fgets($handle);
-}
+// TODO Stocker les autres lignes sous forme d'objet (en instanciant un objet Upgrade)
 
-    //while( $i < 5 )
-    //{
-     //   echo $i . '<br />'; // affichage
-   //     $i++; // incrémentation
-  //  }
-//
+// TODO (optionnel) Afficher les valeurs des objets nouvellement crées sur l'interface à la place de l'ancien shop.json
