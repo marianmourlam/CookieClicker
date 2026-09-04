@@ -1,14 +1,22 @@
 <?php
+require_once __DIR__ . '/Upgrade.php';
+function createUpgrade(array $ligne): Upgrade
+{
+    return new Upgrade(
+        (int)$ligne[0], $ligne[1], (int)$ligne[3], (float)$ligne[4], $ligne[5], $ligne[2]
+    );
+}
 
+$openFile = fopen(__DIR__ . '/../upgrades.csv', 'r');
+$headers = fgetcsv($openFile, null, ';');
 
-$openFile = fopen(__DIR__ . '/../upgrades.csv', "r");
-$entetes = fgetcsv($openFile, null, ';');
+$upgrades = [];
 
 while (($ligne = fgetcsv($openFile, null, ';')) !== false) {
-
-    var_dump($ligne);
+    $upgrades[] = createUpgrade($ligne);
 }
-$upgrade = new Upgrade($ligne[0],$ligne[1], $ligne[3], $ligne[4], $ligne[5], $ligne[2], );
+
+fclose($openFile);
 
 // TODO Extraire la première ligne (en-têtes) pour ne pas la stocker en tant qu'objet
 
