@@ -13,4 +13,4 @@ while (($ligne = fgetcsv($openFile, null, ';')) !== false) {
 
 fclose($openFile);
 
-// TODO (optionnel) Afficher les valeurs des objets nouvellement crées sur l'interface à la place de l'ancien shop.json
+// TODO (optionnel) Afficher les valeurs des objets nou²ellement crées sur l'interface à la place de l'ancien shop.json
