@@ -1,0 +1,25 @@
+services:
+  db:
+    image: mysql:8.4
+    container_name: cookieclicker_database
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+    ports:
+      - "${MYSQL_PORT:-3306}:3306"
+    volumes:
+      - db_data:/var/lib/mysql
+
+  adminer:
+    image: adminer:latest
+    container_name: cookieclicker_adminer
+    restart: unless-stopped
+    depends_on:
+      - db
+    ports:
+      - "${ADMINER_PORT:-8080}:8080"
+
+volumes:
+  db_data:
