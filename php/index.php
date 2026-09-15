@@ -14,5 +14,6 @@ while (($ligne = fgetcsv($openFile, null, ';')) !== false) {
 fclose($openFile);
 
 // Prépare la requête (ouvrir F12 et aller dans Network et regarder la requête index.php
+header('Access-Control-Allow-Origin: https://marianmourlam.github.io');
 header('Content-Type: application/json; charset=utf-8');
 echo json_encode($upgrades, JSON_UNESCAPED_UNICODE);
