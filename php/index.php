@@ -13,7 +13,6 @@ while (($ligne = fgetcsv($openFile, null, ';')) !== false) {
 
 fclose($openFile);
 
+// Prépare la requête (ouvrir F12 et aller dans Network et regarder la requête index.php
 header('Content-Type: application/json; charset=utf-8');
 echo json_encode($upgrades, JSON_UNESCAPED_UNICODE);
-
-// TODO (optionnel) Afficher les valeurs des objets nouvellement crées sur l'interface à la place de l'ancien shop.json
