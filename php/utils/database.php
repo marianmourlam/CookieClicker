@@ -1,10 +1,14 @@
 <?php
-require_once __DIR__ . '/loadEnv.php';
-
-loadEnv(__DIR__ . '/../../.env');
 
 $pdo = new PDO(
-    'mysql:host=' . getenv('DB_HOST') . ';dbname=' . getenv('MYSQL_DATABASE') . ';charset=utf8mb4',
+    'mysql:host=db' . ';dbname=' . getenv('MYSQL_DATABASE') . ';charset=utf8mb4',
     getenv('MYSQL_USER'),
-    getenv('MYSQL_PASSWORD')
+    getenv('MYSQL_ROOT_PASSWORD')
 );
+
+$sqlQuery = 'INSERT INTO upgrades(id, name, description, base_cost, cps, icon) VALUES (:id, :name, :description, :base_cost, :cps, :icon)';
+
+$insertUpgrades = $pdo->prepare($sqlQuery);
+$insertUpgrades->execute([
+
+]);
