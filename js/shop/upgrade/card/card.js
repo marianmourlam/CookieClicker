@@ -4,7 +4,6 @@ import { createUpgradeCps } from "../cps/cps.js";
 import { getScore } from "../../../score/score.js";
 import { createElement } from "../../../main.js";
 import { buyUpgrade } from "../upgrade.js";
-import { increasePriceByPercentage } from "../baseCost/baseCost.js";
 
 export function createUpgradeCard(upgrade) {
   const upgradeCard = createElement("div", ["flex", "upgradeCard"]);
@@ -15,7 +14,6 @@ export function createUpgradeCard(upgrade) {
   upgradeCard.append(icon, upgradeContent.content, cps);
   upgradeCard.addEventListener("click", () => {
     buyUpgrade(upgrade);
-    upgrade.baseCost = increasePriceByPercentage(upgrade.baseCost);
   });
   upgradeCard.addEventListener("animationend", () => {
     upgradeCard.classList.remove("upgradeCard--unlocking");

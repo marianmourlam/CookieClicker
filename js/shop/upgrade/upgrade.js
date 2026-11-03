@@ -56,6 +56,7 @@ export function buyUpgrade(upgrade) {
   createdUpgradeCard.amount.classList.remove("amountUpgrade--hidden");
 
   decrementScore(upgrade.baseCost);
+  upgrade.baseCost = baseCostUpgrade;
   addCookiesPerSecond(upgrade.cps);
   updateScoreDisplay(scoreElement);
   updateCardsState();
