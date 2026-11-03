@@ -24,7 +24,14 @@ $pdo = new PDO(
     getenv('MYSQL_PASSWORD')
 );
 
-$sqlQuery = 'INSERT INTO upgrades(id, name, description, base_cost, cps, icon) VALUES (:id, :name, :description, :baseCost, :cps, :icon)';
+$sqlQuery = 'INSERT INTO upgrades(id, name, description, base_cost, cps, icon)
+    VALUES (:id, :name, :description, :baseCost, :cps, :icon)
+    ON DUPLICATE KEY UPDATE
+        name = VALUES(name),
+        description = VALUES(description),
+        base_cost = VALUES(base_cost),
+        cps = VALUES(cps),
+        icon = VALUES(icon)';
 
 foreach ($upgrades as $upgrade) {
     $insertUpgrades = $pdo->prepare($sqlQuery);
